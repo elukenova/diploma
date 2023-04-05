@@ -1,0 +1,9 @@
+.Nav .NavItem a {
+  color: rgb(38, 13, 154);
+  /* text-decoration: none; */
+}
+.Nav  ul {
+  list-style-type: none;
+  /* display: flex;
+  justify-content: space-evenly; */
+}
