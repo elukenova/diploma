@@ -19,8 +19,8 @@ function App() {
   const [categories, setCategories]= useState([]);
 
   useEffect(() => {// выполнить только однажды
-    return getDocs(categoryCollection)// получить категории
-    .then((docs) => { // когда категории загрузились
+    getDocs(categoryCollection)// получить категории
+    .then(({docs}) => { // когда категории загрузились
       setCategories( // обнавить состаяние
         docs.map(doc =>({ //новый массив
           ...doc.data(), // из свойство name, slug
