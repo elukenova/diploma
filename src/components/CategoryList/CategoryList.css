@@ -1,0 +1,30 @@
+.CategoryList{
+  background-color: #84c0a0;
+  border-radius: 5px
+
+}
+.CategoryList ul{
+  list-style-type: none;
+  color: black;
+}
+.CategoryList ul li {
+  text-align: start;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  color: black;
+
+}
+.CategoryList a{
+  color: #333333;
+}
+
+.CategoryList h1 {
+  color: black;
+
+  font-size: 18px;
+  text-align: center;
+}
+.CategoryList a:hover {
+  background-color: white;
+}
