@@ -1,9 +1,17 @@
 .Nav .NavItem a {
-  color: rgb(38, 13, 154);
+  color: white;
   text-decoration: none;
+
+
 }
 .Nav  ul {
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+  margin: 10px;
+  padding: 35px;
+}
+.Nav {
+  background-color: #84c0a0;
+  font-family: "Roboto", "Arial","sans-serif";
 }
