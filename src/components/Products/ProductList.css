@@ -1,0 +1,8 @@
+.ProductList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.ProductList img{
+  width: 60%;
+}

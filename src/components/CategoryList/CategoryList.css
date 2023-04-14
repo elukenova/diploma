@@ -1,6 +1,8 @@
 .CategoryList{
   background-color: #84c0a0;
-  border-radius: 5px
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
 
 }
 .CategoryList ul{
