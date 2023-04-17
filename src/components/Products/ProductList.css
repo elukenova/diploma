@@ -1,8 +1,10 @@
-.ProductList{
+.ProductList .Product{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
 }
-.ProductList img{
+.ProductList .Product img{
   width: 60%;
+}
+.ProductList .ProductList icon{
+  width: 25px;
 }
