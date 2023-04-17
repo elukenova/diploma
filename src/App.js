@@ -10,14 +10,15 @@ import { createContext, useEffect, useState } from "react";
 import { getDocs } from "firebase/firestore/lite";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./Pages/Product";
+import Cart from "./Pages/Cart";
 
 //Создать контекстб который будет хранить данные.
 export const AppContext = createContext({
   categories: [],
   products: [],
   //контекст для корзины
-  cart :[],
-  setCart : () => {},
+  cart :{}, //садержимое корзинки
+  setCart : () => {}, //изменить садержимое корзинки
 })
 
 function App() {
@@ -53,6 +54,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<New />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/delivery" element={<Delivery />} />
