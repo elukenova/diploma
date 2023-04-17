@@ -3,6 +3,7 @@ import React from "react";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
 import CategoryList from "../CategoryList/CategoryList";
+import CartLink from "../CartLink/CartLink";
 
 export default function Layout(props) {
   return (
@@ -10,6 +11,7 @@ export default function Layout(props) {
       <header>
         <Logo />
         <Nav />
+        <CartLink />
       </header>
 
       <aside>
