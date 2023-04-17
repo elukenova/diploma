@@ -12,11 +12,13 @@ export default function Product(){
   if(!product) {
     return <NotFound />
   }
+  console.log(product)
   return(
     <div className="Product">
       <h1>{product.name}</h1>
-      <img scr={product.picrure} alt={product.name} />
+      <img src={product.picture} alt={product.name} />
       <span>{product.price}$</span>
+      <p>{product.description}</p>
     </div>
   )
 }
