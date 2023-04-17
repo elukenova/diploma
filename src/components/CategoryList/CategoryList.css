@@ -31,3 +31,6 @@
 .CategoryList a:hover {
   background-color: white;
 }
+.CategoryList img{
+  width: 30%;
+}
