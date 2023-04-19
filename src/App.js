@@ -11,6 +11,7 @@ import { getDocs } from "firebase/firestore/lite";
 import { categoryCollection, productsCollection } from "./firebase";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
+import ThankYou from "./Pages/ThankYou";
 
 //Создать контекстб который будет хранить данные.
 export const AppContext = createContext({
@@ -24,7 +25,13 @@ export const AppContext = createContext({
 function App() {
   const [categories, setCategories]= useState([]);
   const [products, setProducts] = useState([]);
-  const [cart, setCart] = useState([]);
+  const [cart, setCart] = useState(() => {
+    return JSON.parse(localStorage.getItem('cart')) || {}
+  });
+
+  useEffect(() =>{
+    localStorage.setItem('cart',JSON.stringify(cart));
+  }, [cart]);
 
   useEffect(() => {// выполнить только однажды
     getDocs(categoryCollection)// получить категории
@@ -60,6 +67,7 @@ function App() {
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/categories/:slug" element={<Category />} />
           <Route path="/products/:slug" element={<Product />} />
+          <Route path="/thank-you" element={<ThankYou />} />
 
           <Route path="*" element={<NotFound />} />
         </Routes>
