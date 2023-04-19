@@ -1,0 +1,13 @@
+.OrderForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.OrderForm input {
+  max-width: 200px;
+
+}
+
+.OrderForm button {
+  width :10%;
+}
