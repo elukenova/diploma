@@ -1,5 +1,13 @@
+import OrderForm from "../components/OrderForm/OrderForm";
+import CartList from "../components/CartList/CartList";
+
 export default function Cart(){
   return(
-    <h1>Hello</h1>
+    <div className="Cart">
+      <h1>Cart</h1>
+      <CartList />
+      <OrderForm />
+    </div>
+    
   )
 }
