@@ -10,7 +10,7 @@
 .Layout header {
   grid-area: header;
   display: flex;
-  background-color: #84c0a0
+  background-color: #3b3e40
 }
 .Layout aside {
   grid-area: aside;
