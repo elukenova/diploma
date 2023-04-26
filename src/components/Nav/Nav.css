@@ -1,5 +1,5 @@
 .Nav .NavItem a {
-  color: white;
+  color: #3b3e40;
   text-decoration: none;
 
 
@@ -12,6 +12,6 @@
   padding: 35px;
 }
 .Nav {
-  background-color: #3b3e40;
+  background-color: #ffffff;
   font-family: "Roboto", "Arial","sans-serif";
 }
