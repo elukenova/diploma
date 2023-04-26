@@ -1,5 +1,5 @@
 .CategoryList{
-  background-color: #84c0a0;
+  background-color:#a39f9f;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
@@ -7,19 +7,19 @@
 }
 .CategoryList ul{
   list-style-type: none;
-  color: black;
+  color: #222121;
 }
 .CategoryList ul li {
   text-align: start;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
-  color: black;
+  color: #fcfcfc;
 
 
 }
 .CategoryList a{
-  color: #333333;
+  color: #fcfdfd;
 }
 
 .CategoryList h1 {
