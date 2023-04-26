@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import "./CartList.css";
 import { AppContext } from "../../App";
-import Product from "../../Pages/Product";
 import { Link } from "react-router-dom";
 
 export default function CartList() {
