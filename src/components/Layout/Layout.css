@@ -17,10 +17,6 @@ body{
   margin: 0 auto;
 
 }
-.Layout{
-
-
-}
 .Layout header {
   grid-area: header;
   display: flex;
