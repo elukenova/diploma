@@ -2,6 +2,8 @@ import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
+import "./Auth.css";
+
 
 export default function Auth() {
   const { user } = useContext(AppContext);
@@ -10,13 +12,12 @@ export default function Auth() {
     <div className="Auth">
       {user ? (
         <span>
-          Hello <Link to="/orders">{user.displayName}</Link>!
-          <button onClick={logOut}>Sign out</button>
+          <Link to="/orders">{user.displayName}</Link>!
+          <img className="Test" src="https://cdn4.iconfinder.com/data/icons/contact-us-19/48/92-512.png" alt="signIn"   onClick={logOut}/>
         </span>
       ) : (
         <span>
-          Hello guest!
-          <button onClick={logIn}>Sign in</button>
+          <img className="Test" src="https://cdn4.iconfinder.com/data/icons/contact-us-19/48/92-512.png" alt="signOut"  onClick={logIn}/>
         </span>
       )}
     </div>
