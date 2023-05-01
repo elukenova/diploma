@@ -3,8 +3,5 @@
   flex-direction: row;
 }
 .ProductList .Product img{
-  width: 60%;
-}
-.ProductList .ProductList icon{
-  width: 25px;
+  width: 30%;
 }
