@@ -7,12 +7,11 @@ import New from "./Pages/New";
 import Category from "./Pages/Category";
 import NotFound from "./Pages/NotFound";
 import { createContext, useEffect, useState } from "react";
-import { getDocs } from "firebase/firestore/lite";
 import {
-  categoryCollection,
   onAuthChange,
-  ordersCollection,
-  productsCollection,
+  onCategoriesLoad,
+  onOrdersLoad,
+  onProductsLoad,
 } from "./firebase";
 import Product from "./Pages/Product";
 import Cart from "./Pages/Cart";
@@ -46,46 +45,15 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-    // выполнить только однажды
-    getDocs(categoryCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setCategories(
-          // обнавить состаяние
-          docs.map((doc) => ({
-            //новый массив
-            ...doc.data(), // из свойство name, slug
-            id: doc.id, // и свойства id
-          }))
-        );
-      });
-    getDocs(productsCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setProducts(
-          // обнавить состаяние
-          docs.map((doc) => ({
-            //новый массив
-            ...doc.data(), // из свойство name, slug
-            id: doc.id, // и свойства id
-          }))
-        );
-      });
-
-    getDocs(ordersCollection) // получить категории
-      .then(({ docs }) => {
-        // когда категории загрузились
-        setOrders(
-          // обнавить состаяние
-          docs.map((doc) => ({
-            //новый массив
-            ...doc.data(), // из свойство name, slug
-            id: doc.id, // и свойства id
-          }))
-        );
-      });
+  onCategoriesLoad(setCategories);
+  onProductsLoad(setProducts);
+  onOrdersLoad(setOrders);
 
     onAuthChange((user) => {
+      if (user) {
+        user.isAdmin = user.email === "ajowka05@gmail.com";
+      }
+      
       setUser(user);
     });
   }, []);
