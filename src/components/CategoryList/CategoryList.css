@@ -1,35 +1,35 @@
 .CategoryList{
-  background-color:#a39f9f;
   border-radius: 5px;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 25px;
+  padding-top: 30px;
 }
 .CategoryList ul{
   list-style-type: none;
-  color: #222121;
+  color: black;
 }
 .CategoryList ul li {
   text-align: start;
   margin-bottom: 10px;
   padding-bottom: 10px;
   border-radius: 5px;
-  color: #fcfcfc;
+  color: #060606;
 
 
 }
 .CategoryList a{
-  color: #fcfdfd;
+  color: #0a0a0a;
 }
 
 .CategoryList h1 {
-  color: black;
-
-  font-size: 18px;
-  text-align: center;
+  color: rgb(10, 10, 10);
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
 }
 .CategoryList a:hover {
-  background-color: white;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.118);
+  border-radius: 5px;
+  padding: 8px;
 }
 .CategoryList img{
   width: 25%;
