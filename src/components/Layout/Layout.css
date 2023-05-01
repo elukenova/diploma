@@ -1,3 +1,12 @@
+body{
+  background-image: url("https://stormsend1.djicdn.com/tpc/uploads/carousel/image/36e6316fa6fd325c68b950b30a192138@origin.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;  
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
 .Layout {
   display: grid;
   grid-template-areas: "header header"
@@ -9,12 +18,8 @@
 
 }
 .Layout{
-  position: relative;
-  background-image: url("https://stormsend1.djicdn.com/tpc/uploads/carousel/image/36e6316fa6fd325c68b950b30a192138@origin.jpg");
-  width: 1220%;
-  height: 100vh;
-  background-size: 100%;
-  background-repeat: no-repeat;
+
+
 }
 .Layout header {
   grid-area: header;
