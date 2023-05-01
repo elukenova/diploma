@@ -1,17 +1,20 @@
 .Nav .NavItem a {
   color: #3b3e40;
   text-decoration: none;
-
+  
 
 }
-.Nav  ul {
+.Nav ul li {
   list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  margin: 10px;
-  padding: 35px;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-left: 80px;
 }
 .Nav {
-  background-color: #ffffff;
   font-family: "Roboto", "Arial","sans-serif";
+
+}
+.Nav a:hover{
+  color: white;
+  transition: 0.3s;
 }
