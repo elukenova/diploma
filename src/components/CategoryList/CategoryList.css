@@ -1,10 +1,11 @@
 .CategoryList{
-  border-radius: 5px;
   display: flex;
+  display: block;
   flex-wrap: wrap;
-  padding-top: 30px;
+  margin-left: 16px;
 }
 .CategoryList ul{
+  text-decoration: none;
   list-style-type: none;
   color: black;
 }
@@ -19,6 +20,7 @@
 }
 .CategoryList a{
   color: #0a0a0a;
+  text-decoration: none;
 }
 
 .CategoryList h1 {
@@ -27,7 +29,7 @@
 }
 .CategoryList a:hover {
   color: white;
-  background-color: rgba(0, 0, 0, 0.118);
+  background-color: rgba(0, 0, 0, 0.347);
   border-radius: 5px;
   padding: 8px;
 }
