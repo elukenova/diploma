@@ -1,0 +1,11 @@
+.card-item img{
+  
+  width: 30%;
+}
+.card-item{
+  display: flex;
+  flex-direction: column;
+}
+.About{
+  background-image: black;
+}
