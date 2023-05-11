@@ -3,7 +3,7 @@ import Layout from "./components/Layout/Layout";
 import About from "./Pages/About";
 import Contacts from "./Pages/Contacts";
 import Delivery from "./Pages/Delivery";
-import New from "./Pages/New";
+import Home from "./Pages/Home";
 import Category from "./Pages/Category";
 import NotFound from "./Pages/NotFound";
 import { createContext, useEffect, useState } from "react";
@@ -65,7 +65,7 @@ function App() {
       >
         <Layout>
           <Routes>
-            <Route path="/" element={<New />} />
+            <Route path="/" element={<Home />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/about" element={<About />} />
             <Route path="/contacts" element={<Contacts />} />
@@ -74,7 +74,6 @@ function App() {
             <Route path="/products/:slug" element={<Product />} />
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/orders" element={<Orders />} />
-
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
