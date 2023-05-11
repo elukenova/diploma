@@ -3,6 +3,5 @@
 }
 
 .Category h1:hover{
-  color: rgba(237, 190, 129, 0.652);
-  transform: rotate(2deg);
+  color: rgba(246, 243, 239, 0.652);
 }
