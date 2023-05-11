@@ -1,31 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Koulen&family=Lato&family=Nunito&family=Playfair+Display:ital@1&family=Prata&family=Raleway:ital,wght@1,100&family=Roboto&family=Roboto+Condensed&family=Teko&display=swap');
-
-.btn{
-
-font-family: Roboto Condensed;
-font-weight: 100;
-font-size: 14px;
-color: #fff;
-background-color: #999b9e;
-padding: 12px 28px;
-border: solid #bec1c4 2px;
-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-border-radius: 50px;
-transition : 0ms;
-transform: translateY(0);
-display: flex;
-flex-direction: row;
-align-items: center;
-cursor: pointer;
+.btn-cart {
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
 }
 
-.btn:hover{
+.btn-cart:hover {background-color: #426eb0}
 
-transition : 0ms;
-padding: 10px 20px;
-transform : translateY(-0px);
-background-color: #fff;
-color: #b8b3b3;
-border: solid 2px #565e61;
+.btn-cart:active {
+  background-color: #4da3cd;
+  box-shadow: 0 5px #667c7e;
+  transform: translateY(4px);
 }
