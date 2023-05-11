@@ -5,6 +5,7 @@ import "./Layout.css";
 import CategoryList from "../CategoryList/CategoryList";
 import CartLink from "../CartLink/CartLink";
 import Auth from "../Auth/Auth";
+import Footer from "../Footer/Footer";
 
 export default function Layout(props) {
   return (
@@ -22,7 +23,9 @@ export default function Layout(props) {
 
       <main>{props.children}</main>
 
-      <footer>FOOTER</footer>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }
