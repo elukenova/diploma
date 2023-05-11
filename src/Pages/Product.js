@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { useMatch } from "react-router-dom"
 import { AppContext } from "../App";
 import NotFound from "./NotFound";
+import "../components/Product.css";
 
 export default function Product(){
   const { params } = useMatch("/products/:slug");
