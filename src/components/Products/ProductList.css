@@ -1,7 +1,30 @@
-.ProductList .Product{
+.Product{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  background-image:  url("//stormsend1.djicdn.com/stormsend/uploads/5d919f01f1a7cc0672874348e38b52bc.jpg");
+  border-radius: 10px;
+  align-items: center;
+  max-width: 400px;
+  height: 500px;
+  margin-bottom: 40px;
+}
+.ProductList{
+  display: flex; 
+  justify-content: space-around; 
+  flex-wrap: wrap;
+  font-family: "Open Sans", "Helvetica Neue",;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(9, 9, 9);
 }
 .ProductList .Product img{
-  width: 30%;
+  margin-top: 100px;
+  width: 70%;
+}
+.Product a{
+  font-family: "Open Sans", "Helvetica Neue",;
+  font-size: 25px;
+  font-weight: 700;
+  color: rgb(10, 10, 10) ;
+  text-decoration: none;
 }
