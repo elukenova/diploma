@@ -1,10 +1,15 @@
 .Nav .NavItem a {
-  color: #3b3e40;
+  color: #fafbfc;
   text-decoration: none;
   padding: 0;
   margin: 0;
   height: 10px;
 
+}
+.NavItem a:hover {
+  background-color: rgba(101, 99, 99, 0.416);
+  padding: 10px;
+  border-radius: 10px;
 }
 .Nav ul li {
   list-style-type: none;
