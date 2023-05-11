@@ -14,7 +14,7 @@ export default function CartLink(){
   return(
     <div className="CartLink">
       <NavLink to="/cart">
-        <img className="cart" src="https://oceanwp.org/wp-content/uploads/2021/06/Cart-Menu-1.png" alt="cart" />({total})
+        <img className="cart" src="https://www.shareicon.net/data/512x512/2016/02/07/281223_cart_512x512.png" alt="cart" />({total})
       </NavLink>
     </div>
   );
