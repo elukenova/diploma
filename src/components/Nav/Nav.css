@@ -1,7 +1,9 @@
 .Nav .NavItem a {
   color: #3b3e40;
   text-decoration: none;
-  
+  padding: 0;
+  margin: 0;
+  height: 10px;
 
 }
 .Nav ul li {
