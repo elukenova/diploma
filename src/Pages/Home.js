@@ -1,8 +1,11 @@
+import { Slider } from "../components/Slider/Slider";
+import "../components/Home.css"
+
 export default function Home() {
   return (
     <div className="Home">
-      <h1>New</h1>
-      <p>This is the new page</p>
+      <p>We will show you new products and promotions. Or just let you know about drones.</p>
+      
     </div>
   );
 }
