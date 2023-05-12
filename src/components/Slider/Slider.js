@@ -7,11 +7,11 @@ import slide5 from "../../assets/avata6.jpeg";
 import "./Slider.css";
 
 const img = [
-  <img key={slide1} src={slide1} />,
-  <img key={slide2} src={slide2} />,
-  <img key={slide3} src={slide3} />,
-  <img key={slide4} src={slide4} />,
-  <img key={slide5} src={slide5} />,
+  <img key={slide1} src={slide1} alt="avata" />,
+  <img key={slide2} src={slide2} alt="avata pro"/>,
+  <img key={slide3} src={slide3} alt="avata min"/>,
+  <img key={slide4} src={slide4} alt="avata max"/>,
+  <img key={slide5} src={slide5} alt="avata s1"/>,
 ];
 
 export function Slider() {
@@ -21,15 +21,6 @@ export function Slider() {
   // Хук Effect
   useEffect(() => {
     // Запускаем интервал
-    const interval = setInterval(() => {
-      // Меняем состояние
-      setActiveIndex((current) => {
-        // Вычисляем индекс следующего слайда, который должен вывестись
-        const res = current === img.length - 1 ? 0 : current + 1;
-        // Возвращаем индекс
-        return res;
-      });
-    }, 3000);
     // Выключаем интервал
     return () => clearInterval();
   }, []);
