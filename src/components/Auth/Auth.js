@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
-import Signin from "../../assets/signin.png"
+import Signin from "../../assets/signin.png";
 import "./Auth.css";
 
 
