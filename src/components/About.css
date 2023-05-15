@@ -1,11 +1,18 @@
 .card-item img{
-  
   width: 30%;
 }
 .card-item{
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
+  margin-bottom: 20px;
 }
-.About{
-  background-image: black;
+.about {
+  background-color: rgba(0, 0, 0, 0.586);
+  color: white;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+.about h1{
+  margin-left: 50px;
 }
