@@ -2,29 +2,30 @@ import { useContext } from "react";
 import "./OrderList.css";
 import { AppContext } from "../../App";
 
-export default function OrderList(){
+export default function OrderList() {
   const { orders, products } = useContext(AppContext);
 
-  if(!orders.length || !products.length){
+  if (!orders.length || !products.length) {
     return "No orders found.";
   }
   // Выводим все заказы.
-  const output = orders.map(order => {
+  const output = orders.map((order) => {
     // Вывести содержимое корзины для этого заказа
-    const cartOutput = Object.keys(order.cart).map(productId => {
-      const product = products.find(product => product.id === productId);
+    const cartOutput = Object.keys(order.cart).map((productId) => {
+      const product = products.find((product) => product.id === productId);
 
-      if (!product){
+      if (!product) {
         return "Product not found";
       }
 
       return (
         <div key={product.id}>
           <img src={product.picture} alt={product.name} />
-          {product.name}: {order.cart[productId]} X {product.price} $ = {order.cart[productId] * product.price}  som;
+          {product.name}: {order.cart[productId]} X {product.price} $ ={" "}
+          {order.cart[productId] * product.price} som;
         </div>
       );
-    })
+    });
 
     return (
       <div key={order.id} className="Order">
@@ -34,11 +35,7 @@ export default function OrderList(){
         <div>Cart: {cartOutput}</div>
       </div>
     );
-  })
+  });
 
-  return (
-    <div className="OrderList">
-      {output}
-    </div>
-  );
+  return <div className="OrderList">{output}</div>;
 }
