@@ -1,7 +1,7 @@
 import "../components/About.css";
 export default function About() {
   return (
-    <div className="About">
+    <div className="about">
       <h1>DJI</h1>
       <div className="card-item">
       <img src="https://nationaltoday.com/wp-content/uploads/2022/05/International-Drone-Day-.jpg" alt="drone"/>
