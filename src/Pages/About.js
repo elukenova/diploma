@@ -2,8 +2,7 @@ import "../components/About.css";
 export default function About() {
   return (
     <div className="About">
-      <h1>SkyLand</h1>
-      <p>This is the about page</p>
+      <h1>DJI</h1>
       <div className="card-item">
       <img src="https://nationaltoday.com/wp-content/uploads/2022/05/International-Drone-Day-.jpg" alt="drone"/>
       <span>Sky Land Management provides high quality, innovative aerial and traditional ground based land management solutions.  Since 2014, we have used the unique capabilities of the latest precision drone technology to provide safer, targeted, efficient and cost effective solutions for clients, in conjunction with traditional ground based services.</span>
