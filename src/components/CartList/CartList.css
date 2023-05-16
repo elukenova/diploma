@@ -1,8 +1,24 @@
 .CartList .CartItem {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.337);
 }
 
 .CartList .CartItem img {
-  width: 150px;
+  width: 10%;
+  border-radius: 90%;
+
+}
+.CartList a{
+  color:black;
+  text-decoration:none ;
+}
+.CartList input{
+  width: 25px;
+}
+.CartList output{
+  background-color: rgba(0, 0, 0, 0.511);
 }

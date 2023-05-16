@@ -31,7 +31,7 @@ export default function CartList() {
     .map((product) => (
       <div className="CartItem" key={product.id}>
         <img src={product.picture} alt={product.name} />
-        <Link to={"/product/" + product.slug}>{product.name}</Link>
+        <Link to={"/product/" + product.slug} >{product.name}</Link>
         <input
           type="number"
           value={cart[product.id]}
@@ -39,7 +39,7 @@ export default function CartList() {
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
         <span>{cart[product.id] * product.price} $</span>
-        <button onClick={() => onItemRemove(product)}>Remove</button>
+        <button onClick={() => onItemRemove(product)} src="https://icons-for-free.com/download-icon-remove+icon-1320184982863027796_512.png"></button>
       </div>
     ));
   return <div className="CartList">{output}</div>;
