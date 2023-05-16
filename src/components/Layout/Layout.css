@@ -38,6 +38,7 @@ background-color: rgb(58, 58, 58);
 }
 .Layout main {
   grid-area: main;
+  min-height: 90vh;
 }
 .Layout footer {
   grid-area:footer;
