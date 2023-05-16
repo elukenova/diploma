@@ -12,6 +12,7 @@ return(
     </div>
     <div className="footer-nav">
       <ul>
+        <h2>Menus</h2>
         <li className="NavFooter">
           <NavLink to="/">Home</NavLink>
         </li>
@@ -27,8 +28,8 @@ return(
       </ul>
     </div>
     <div className="footer-category">
-      <h4>Categories</h4>
-    <ul>
+      <ul>
+        <h2>Categories</h2>
         <li className="footer-category">
           <NavLink to="../categories/steadicams">Stedicams</NavLink>
         </li>
@@ -53,7 +54,7 @@ return(
       <h1>Network</h1>
       <div className="footer-apps">
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt="linkedln"/>
-      <img src="https://cdn0.iconfinder.com/data/icons/social-network-9/50/29-512.png" alt="GitHub"/>
+      <img src="https://cdn0.iconfinder.com/data/icons/shift-logotypes/32/Github-512.png" alt="GitHub"/>
       <img src="https://www.svgrepo.com/download/299513/telegram.svg" alt="Telegram"/>
       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/767px-WhatsApp.svg.png" alt="WhatsApp"/>
       </div>
