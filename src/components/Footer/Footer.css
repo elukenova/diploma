@@ -17,10 +17,7 @@
   color: white;
 }
 .NavFooter a:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.347);
-  border-radius: 5px;
-  padding: 8px;
+  color: grey;
 }
 .footer-category a{
   text-decoration: none;
@@ -32,16 +29,19 @@
   display: flex;
   flex-wrap: wrap;
 }
-.footer-category h4{
+.Footer h2{
   color: white;
   padding: 0;
+}
+.Footer h2:hover{
+  color: darkgray;
 }
 .footer-icon h1{
   color: white;
 }
 .footer-category a:hover{
-  color: white;
-  background-color: rgba(0, 0, 0, 0.347);
-  border-radius: 5px;
-  padding: 8px;
+  color: rgba(128, 128, 128, 0.984);
+}
+.footer-logo img{
+  margin-top: 50px;
 }
