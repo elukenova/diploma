@@ -3,6 +3,7 @@ import { logIn, logOut } from "../../firebase";
 import { AppContext } from "../../App";
 import { Link } from "react-router-dom";
 import signin from "../../assets/login.svg";
+import signout from "../../assets/logout.svg";
 import "./Auth.css";
 
 
@@ -14,7 +15,7 @@ export default function Auth() {
       {user ? (
         <span>
           <Link to="/orders">{user.displayName}</Link>!
-          <img className="Test" src="https://www.clipartmax.com/png/middle/336-3366677_login-login-icon-white-png.png" alt="signIn"   onClick={logOut}/>
+          <img className="Test" src={signout} alt="signIn"   onClick={logOut}/>
         </span>
       ) : (
         <span>
