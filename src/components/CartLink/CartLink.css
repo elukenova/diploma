@@ -3,3 +3,7 @@
   padding-top: 20px;
   margin-left: 70px;
 }
+.CartLink a{
+  color: white;
+  text-decoration: none;
+}
