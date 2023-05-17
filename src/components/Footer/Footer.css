@@ -6,6 +6,7 @@
 }
 .footer-apps img{
   width: 30px;
+  padding: 10px;
 }
 .footer-nav ul li{
   list-style-type: none;
@@ -15,6 +16,7 @@
 .footer-nav a{
   text-decoration: none;
   color: white;
+  transition: 0.5s;
 }
 .NavFooter a:hover {
   color: grey;
@@ -22,6 +24,7 @@
 .footer-category a{
   text-decoration: none;
   color: white;
+  transition: 0.5s;
 
 }
 .footer-category ul li{
@@ -33,11 +36,9 @@
   color: white;
   padding: 0;
 }
-.Footer h2:hover{
-  color: darkgray;
-}
 .footer-icon h1{
   color: white;
+  padding-left: 35px;
 }
 .footer-category a:hover{
   color: rgba(128, 128, 128, 0.984);
