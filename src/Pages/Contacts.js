@@ -5,7 +5,7 @@ export default function Contacts() {
     <div className="Contacts">
       <h1>Contact US</h1>
       <div className="contacts-item">
-      <img src="https://img.caixin.com/2021-06-03/1622714168632354.jpg" alt="DJI company"/>
+      <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iaUCpD..oJzA/v1/1200x-1.jpg" alt="DJI company"/>
       </div>
       <div className="contacts-text" >
         <h2>Headquarters</h2>
