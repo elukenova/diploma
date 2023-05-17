@@ -1,0 +1,31 @@
+.Contacts img{
+  width: 95%;
+  padding-left: 25px;
+}
+.Contacts{
+  background-color: rgba(227, 220, 220, 0.449);
+  color: black;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Contacts h1{
+  padding-left: 25px;
+}
+.contacts-a {
+  padding-top: 70px;
+}
+.Contacts h2{
+  padding-left: 25px;
+}
+.contacts-text ul li{
+  list-style-type: none;
+}
+.contacts-text2 ul li {
+  list-style-type: none;
+}
+.contacts-a2 {
+  padding-top: 75px;
+}
