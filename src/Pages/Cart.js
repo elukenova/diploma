@@ -1,5 +1,6 @@
 import OrderForm from "../components/OrderForm/OrderForm";
 import CartList from "../components/CartList/CartList";
+import "../components/CartDisplay.css";
 
 export default function Cart(){
   return(
