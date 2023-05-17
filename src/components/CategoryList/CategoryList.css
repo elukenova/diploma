@@ -22,12 +22,13 @@
 .CategoryList a{
   color: #f4f0f0;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 .CategoryList h1 {
   color: rgba(254, 254, 254, 0.734);
   background-color: rgba(48, 48, 49, 0.508);
-  padding: 15px;
+  padding: 15px 0;
   border-radius: 10px;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
 }
