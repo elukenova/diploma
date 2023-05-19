@@ -39,7 +39,7 @@ export default function CartList() {
           onChange={(event) => onQuantityChange(product, +event.target.value)}
         />
         <span>{cart[product.id] * product.price} $</span>
-        <button onClick={() => onItemRemove(product)} src="https://icons-for-free.com/download-icon-remove+icon-1320184982863027796_512.png"></button>
+        <button onClick={() => onItemRemove(product)} className="btn-cart-remove" >Remove</button>
       </div>
     ));
   return <div className="CartList">{output}</div>;

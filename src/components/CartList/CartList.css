@@ -5,16 +5,19 @@
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
   font-weight: 600;
   margin-bottom: 25px;
-  background-color: rgba(255, 255, 255, 0.337);
+  background-color: rgba(0, 0, 0, 0.43);
+  color: white;
 }
 
-.CartList .CartItem img {
+.CartItem img {
   width: 10%;
-  border-radius: 90%;
-
+  height: 10%;
+} 
+.Cart {
+  color: white;
 }
 .CartList a{
-  color:black;
+  color:white;
   text-decoration:none ;
 }
 .CartList input{
@@ -22,4 +25,26 @@
 }
 .CartList output{
   background-color: rgba(0, 0, 0, 0.511);
+}
+.btn-cart-remove {
+  display: inline-block;
+  padding: 3px 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+}
+
+.btn-cart-remove:hover {background-color: #426eb0}
+
+.btn-cart-remove:active {
+  background-color: #4da3cd;
+  box-shadow: 0 3px #667c7e;
+  transform: translateY(4px);
 }
