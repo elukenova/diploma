@@ -13,7 +13,7 @@ export default function Auth() {
   return (
     <div className="Auth">
       {user ? (
-        <span>
+        <span className="orderName">
           <Link to="/orders">{user.displayName}</Link>!
           <img className="Test" src={signout} alt="signIn"   onClick={logOut}/>
         </span>
