@@ -44,7 +44,8 @@ export default function OrderForm() {
       <label>
         Address: <input type="text" name="address" required />
       </label>
-      <button>Submit</button>
+      <button className="btn-cart-submit">Submit</button>
     </form>
   );
 }
+

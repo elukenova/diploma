@@ -1,13 +1,47 @@
 .OrderForm {
+  background-color: rgba(255, 255, 255, 0.373);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  color: black;
+  flex-direction: column;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 200px;
+  padding: 20px;
+  margin-bottom: 60px;
+}
+.OrderForm label {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+.OrderForm input{
+  border-radius: 10px;
+  padding: 4px 10px;
 }
 
-.OrderForm input {
-  max-width: 200px;
-
+.btn-cart-submit {
+  display: inline-block;
+  padding: 4px 7px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: blue;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
 }
 
-.OrderForm button {
-  width :10%;
+.btn-cart-submit:hover {background-color: #426eb0}
+
+.btn-cart-submit:active {
+  background-color: #4da3cd;
+  box-shadow: 0 3px #667c7e;
+  transform: translateY(4px);
 }
