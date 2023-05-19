@@ -13,7 +13,7 @@ export default function ProductList({ category }) {
     .map((product) => (
       <div key={product.id} className="Product">
         <img src={product.picture} alt={product.name} />
-        <NavLink to={"/products/" + product.slug}>{product.name}</NavLink>
+        <NavLink to={"/products/" + product.slug}>{product.name}</NavLink><br />
         <span>{product.price} $</span>
         <span><AddToCart product={product} /></span>
         <span><DeleteProduct product={product}/></span>
