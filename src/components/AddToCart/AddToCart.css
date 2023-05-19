@@ -8,9 +8,10 @@
   outline: none;
   color: #fff;
   background-color: blue;
+
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
+  box-shadow: 0 5px #999;
 }
 
 .btn-cart:hover {background-color: #426eb0}
@@ -19,4 +20,10 @@
   background-color: #4da3cd;
   box-shadow: 0 5px #667c7e;
   transform: translateY(4px);
+}
+.center{
+  text-align: center;
+}
+.AddToCart{
+  margin: 0 auto;
 }
