@@ -1,0 +1,10 @@
+.ThankYou {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.53);
+  text-align: center;
+}
+.ThankYou-gif{
+  width: 50%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
