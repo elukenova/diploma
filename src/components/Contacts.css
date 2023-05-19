@@ -6,8 +6,8 @@
   background-color: rgba(227, 220, 220, 0.449);
   color: black;
   font-weight: 600;
-  margin-left: 10px;
   margin-bottom: 30px;
+  margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -16,6 +16,20 @@
 }
 .contacts-a {
   padding-top: 70px;
+}
+.contacts-a a{
+  color: rgb(49, 42, 92);
+}
+.contacts-a a:hover{
+  color: blue;
+  transition: 0.3s;
+}
+.contacts-a2 a{
+  color: rgb(49, 42, 92);
+}
+.contacts-a2 a:hover{
+  color: blue;
+  transition: 0.3s;
 }
 .Contacts h2{
   padding-left: 25px;
