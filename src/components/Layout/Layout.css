@@ -32,6 +32,7 @@ background-color: rgb(58, 58, 58);
   margin: 0;
   padding: 0;
   height: 40%;
+  font-size: 20px;
 }
 .Layout aside {
   grid-area: aside;
@@ -39,7 +40,8 @@ background-color: rgb(58, 58, 58);
 .Layout main {
   grid-area: main;
   min-height: 90vh;
-  max-width: 98%;
+  max-width: 100%;
+  margin-left: -80px;
 }
 .Layout footer {
   grid-area:footer;
@@ -47,4 +49,9 @@ background-color: rgb(58, 58, 58);
 
 .Layout .logo {
   max-width: 120px;
+}
+@media (max-width: 550px) {
+  .Layout header > .Nav {
+    display: none;
+  } 
 }
