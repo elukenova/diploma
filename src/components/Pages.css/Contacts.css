@@ -3,8 +3,8 @@
   padding-left: 25px;
 }
 .Contacts{
-  background-color: rgba(227, 220, 220, 0.449);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.586);
+  color: rgb(251, 249, 249);
   font-weight: 600;
   margin-bottom: 30px;
   margin-top: 60px;
@@ -13,19 +13,20 @@
 }
 .Contacts h1{
   padding-left: 25px;
+  text-align: center;
 }
 .contacts-a {
   padding-top: 70px;
 }
 .contacts-a a{
-  color: rgb(49, 42, 92);
+  color: grey;
 }
 .contacts-a a:hover{
   color: blue;
   transition: 0.3s;
 }
 .contacts-a2 a{
-  color: rgb(49, 42, 92);
+  color: grey;
 }
 .contacts-a2 a:hover{
   color: blue;
