@@ -18,10 +18,14 @@
   font-weight: 500;
   color: rgb(9, 9, 9);
 }
-.ProductList .Product img{
-  margin-top: 70px;
-  padding: 0;
-  width: 70%;
+.ProductList .Product .productlist-image img{
+  width: 100%;
+  margin-top: 10%;
+}
+
+.ProductList .Product .productlist-image {
+  height: 60%;
+  
 }
 .Product .Air{
   margin-top: 140px;
@@ -32,4 +36,8 @@
   font-weight: 700;
   color: rgb(10, 10, 10) ;
   text-decoration: none;
+}
+
+.Product .AddToCart .total {
+  margin-left: 40px;
 }
