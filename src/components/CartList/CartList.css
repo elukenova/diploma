@@ -28,20 +28,23 @@
 }
 .btn-cart-remove {
   display: inline-block;
-  padding: 3px 6px;
+  padding: 5px 10px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #fff;
-  background-color: blue;
+  color: black;
+  background-color: rgb(251, 251, 254);
   border: none;
   border-radius: 15px;
   cursor: pointer;
 }
 
-.btn-cart-remove:hover {background-color: #426eb0}
+.btn-cart-remove:hover {
+  background-color: grey;
+  transition: 0.3s;
+}
 
 .btn-cart-remove:active {
   background-color: #4da3cd;
