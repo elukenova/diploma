@@ -1,4 +1,4 @@
-import "../components/Delivery.css";
+import "../components/Pages.css/Delivery.css";
 export default function Delivery() {
   return (
     <div className="Delivery">

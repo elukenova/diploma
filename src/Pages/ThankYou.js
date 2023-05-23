@@ -1,4 +1,4 @@
-import "../components/ThankYou.css";
+import "../components/Pages.css/ThankYou.css";
 export default function ThankYou() {
   return (
     <div className="ThankYou">

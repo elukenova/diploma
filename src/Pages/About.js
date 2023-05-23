@@ -1,4 +1,4 @@
-import "../components/About.css";
+import "../components/Pages.css/About.css";
 export default function About() {
   return (
     <div className="about">
