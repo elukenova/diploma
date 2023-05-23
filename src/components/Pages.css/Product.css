@@ -1,0 +1,25 @@
+.Product-in{
+  background-color:rgba(255, 255, 255, 0.356);
+  margin-bottom: 30px;
+  margin-top:60px;
+}
+.Product-in .product-text{
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+.Product-in .product-text span{
+  text-align: center;
+}
+.Product-in h1{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.Product-in .product-image .product-img {
+  width: 450px;
+  margin-left: 25%;
+}

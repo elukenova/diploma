@@ -1,0 +1,8 @@
+.Category h1{
+  color: white;
+  text-align: center;
+}
+
+.Category h1:hover{
+  color: rgba(246, 243, 239, 0.652);
+}

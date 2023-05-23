@@ -1,0 +1,29 @@
+.card-item img{
+  width: 100%;
+}
+.card-item{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.cart-item2 img{
+  width: 30%;
+}
+.cart-item2{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 15px;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+}
+.about {
+  background-color: rgba(0, 0, 0, 0.586);
+  color: white;
+  margin-bottom: 30px;
+  margin-top: 60px;
+}
+.about h1{
+  margin-left: 50px;
+  text-align: center;
+}
