@@ -46,3 +46,7 @@
 .footer-logo img{
   margin-top: 50px;
 }
+.footer-apps img:hover{
+  background-color: rgba(112, 109, 116, 0.521);
+  border-radius: 10px;
+} 
