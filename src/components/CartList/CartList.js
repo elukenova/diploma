@@ -54,7 +54,7 @@ export default function CartList() {
           onClick={() => onItemRemove(product)}
           className="btn-cart-remove"
         >
-          Remove
+          X
         </button>
       </div>
     ));
