@@ -1,8 +1,8 @@
-.Contacts img{
+.Contacts img {
   width: 95%;
   padding-left: 25px;
 }
-.Contacts{
+.Contacts {
   background-color: rgba(0, 0, 0, 0.586);
   color: rgb(251, 249, 249);
   font-weight: 600;
@@ -10,32 +10,37 @@
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
 }
-.Contacts h1{
+.Contacts .container {
+  margin: 0 auto;
+}
+
+.Contacts h1 {
   padding-left: 25px;
   text-align: center;
 }
 .contacts-a {
   padding-top: 70px;
 }
-.contacts-a a{
+.contacts-a a {
   color: grey;
 }
-.contacts-a a:hover{
+.contacts-a a:hover {
   color: blue;
   transition: 0.3s;
 }
-.contacts-a2 a{
+.contacts-a2 a {
   color: grey;
 }
-.contacts-a2 a:hover{
+.contacts-a2 a:hover {
   color: blue;
   transition: 0.3s;
 }
-.Contacts h2{
+.Contacts h2 {
   padding-left: 25px;
 }
-.contacts-text ul li{
+.contacts-text ul li {
   list-style-type: none;
 }
 .contacts-text2 ul li {

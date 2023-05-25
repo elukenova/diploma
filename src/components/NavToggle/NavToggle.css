@@ -4,6 +4,7 @@
   cursor: pointer;
   background-color: transparent;
   border: none;
+  margin-top: 25px;
 }
 .NavToggle .line {
   display: block;
@@ -13,7 +14,7 @@
   background-color: rgb(254, 251, 251);
   transition: 0.2s;
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .NavToggle {
     display: inline-block;
   }

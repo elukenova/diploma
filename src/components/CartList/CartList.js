@@ -14,7 +14,7 @@ export default function CartList() {
     });
   }
 
-  function onItemRemove(product){
+  function onItemRemove(product) {
     const newCart = { ...cart };
     delete newCart[product.id];
     setCart(newCart);
@@ -30,16 +30,32 @@ export default function CartList() {
     // вывести  товары и их кол-во
     .map((product) => (
       <div className="CartItem" key={product.id}>
-        <img src={product.picture} alt={product.name} />
-        <Link to={"/product/" + product.slug} >{product.name}</Link>
-        <input
-          type="number"
-          value={cart[product.id]}
-          min={1}
-          onChange={(event) => onQuantityChange(product, +event.target.value)}
-        />
+        <div className="Cart-image">
+          <img src={product.picture} alt={product.name} />
+        </div>
+        <div className="product-name">
+          <Link className="name" to={"/product/" + product.slug}>{product.name}</Link>
+        </div>
+        <div className="product-block">
+          <div className="product-counter">
+            <input
+              type="number"
+              value={cart[product.id]}
+              min={1}
+              onChange={(event) =>
+                onQuantityChange(product, +event.target.value)
+              }
+            />
+          </div>
+        </div>
+
         <span>{cart[product.id] * product.price} $</span>
-        <button onClick={() => onItemRemove(product)} className="btn-cart-remove" >Remove</button>
+        <button
+          onClick={() => onItemRemove(product)}
+          className="btn-cart-remove"
+        >
+          Remove
+        </button>
       </div>
     ));
   return <div className="CartList">{output}</div>;

@@ -43,3 +43,14 @@
 .CategoryList img{
   width: 25%;
 }
+
+@media screen and (max-width: 768px) {
+  .CategoryList {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .CategoryList h1 {
+    max-width: none;
+  }
+}

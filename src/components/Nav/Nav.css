@@ -12,11 +12,13 @@
   padding: 10px;
   border-radius: 10px;
 }
+.Nav ul {
+  display: flex;
+}
 .Nav ul li {
   list-style-type: none;
-  display: inline-block;
   padding: 10px 20px;
-  margin-left: 80px;
+
 }
 .Nav {
   font-family: "Roboto", "Arial","sans-serif";
@@ -27,3 +29,4 @@
   color: white;
   transition: 0.3s;
 }
+

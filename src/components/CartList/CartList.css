@@ -1,36 +1,60 @@
 .CartList .CartItem {
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-evenly;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
   font-weight: 600;
   margin-bottom: 25px;
+  padding-top: 25px ;
   background-color: rgba(0, 0, 0, 0.43);
   color: white;
+  grid-template-areas: ".Cart-image .product-name .product-counter span .btn-cart-remove";
+  grid-template-columns: 1fr 3fr 1fr 1fr 1fr;
 }
 
-.CartItem img {
-  width: 10%;
-  height: 10%;
-} 
-.Cart {
+.CartList .CartItem .Cart-image img {
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+}
+
+.CartList .CartItem .name {
+  color: #f5f4f4;
+  padding-left: 70px;
+  text-decoration: none;
+  width: 100%;
+}
+.CartList {
   color: white;
+  width: 100%;
 }
-.CartList a{
-  color:white;
-  text-decoration:none ;
+.CartList .CartItem .product-name {
+  width: 80%;
 }
-.CartList input{
-  width: 25px;
+
+.product-block .Product-counter{
+  margin-right: 30px;
 }
-.CartList output{
-  background-color: rgba(0, 0, 0, 0.511);
+.CartList .CartItem input {
+  border: 1px solid #000;
+  border-radius: 0;
+  height: 20px;
+  text-align: center;
+  width: 20px;
 }
+.CartList .CartItem .product-name .product-block {
+  align-items: center;
+  margin-right: 30px;
+  width: 100%;
+}
+.Product-counter {
+  background-color: #dadada;
+}
+
 .btn-cart-remove {
   display: inline-block;
   padding: 5px 10px;
   font-size: 16px;
-  cursor: pointer;
+  width: 70%;
   text-align: center;
   text-decoration: none;
   outline: none;

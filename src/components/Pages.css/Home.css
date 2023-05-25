@@ -1,8 +1,126 @@
-.Home{
-  color:white;
+.Home {
+  color: white;
   font-size: 35px;
 }
-.drone-video{
+.Home .container {
+  margin: 0 auto;
+  padding: 20px;
+}
+.drone-video {
   display: flex;
   flex-wrap: wrap;
+}
+.video {
+  position: relative;
+  text-align: center;
+  
+}
+
+.video video {
+  object-fit: cover;
+  max-width: 100%;
+  height: 50%;
+}
+
+.header-text h1 {
+  margin: 0;
+}
+.header-subtitle {
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.home-context {
+  background-color: rgba(0, 0, 0, 0.473);
+  margin-bottom: 20px;
+}
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 7%;
+  padding-top: 60px;
+}
+
+.header-text {
+  position: absolute;
+  top:9%;
+  left: 57%;
+  margin-left: 68px;
+  width: 66.5%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  background-color: rgba(255, 255, 255, 0.305);
+  padding: 10px;
+}
+.header-text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-weight: 500;
+  font-family:Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+.header-text p{
+  font-size: 20px;
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.header-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+@media (max-width:990px) {
+  .video video {
+    width: 60%;
+  }
+  .header-text {
+    position: absolute;
+    top:9%;
+    left: 47%;
+    margin-left: 59px;
+    
+    width: 68%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.305);
+    padding: 10px;
+  }
+  .header-text .header-title {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .header-text .header-title {
+    font-size: 1.8rem;
+  }
+  .header-text .header-subtitle {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 670px) {
+  .header-text .header-title {
+    font-size: 0.8rem;
+  }
+  .header-text .header-subtitle {
+    font-size: 0.3rem;
+  }
+}
+.drone-video img {
+  width: 30%;
+}
+.drone-video h1 {
+  font-size: 53px;
+  text-align: center;
+}
+.drone-video p {
+  font-size: 20px;
+  margin-left: 15px;
+}
+@media (max-width: 768px) {
+  .video,
+  .home-context {
+    width: 50%;
+  }
 }

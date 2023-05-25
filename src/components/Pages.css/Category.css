@@ -6,3 +6,5 @@
 .Category h1:hover{
   color: rgba(246, 243, 239, 0.652);
 }
+@media (max-width: 768px) {
+}

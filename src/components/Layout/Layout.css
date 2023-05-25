@@ -8,6 +8,7 @@ background-color: rgb(58, 58, 58);
     "footer footer";
   grid-template-columns: 1fr 3fr;
   max-width: 1220px;
+
   margin: 0 auto;
   background-image: url("https://cs14.pikabu.ru/post_img/big/2022/01/10/9/1641827339127121388.jpg");
   /* background: linear-gradient(
@@ -21,8 +22,8 @@ background-color: rgb(58, 58, 58);
   background-position: center;
   position: relative;
   background-attachment: fixed;
-  background-size: 100%;
   background-repeat: no-repeat;
+  
 } 
 .Layout header {
   grid-area: header;
@@ -31,8 +32,9 @@ background-color: rgb(58, 58, 58);
   color: #3b3e40;
   margin: 0;
   padding: 0;
-  height: 40%;
+  /* height: 40%; */
   font-size: 20px;
+  flex-wrap: wrap;
 }
 .Layout aside {
   grid-area: aside;
@@ -41,7 +43,7 @@ background-color: rgb(58, 58, 58);
   grid-area: main;
   min-height: 90vh;
   max-width: 100%;
-  margin-left: -80px;
+
 }
 .Layout footer {
   grid-area:footer;
@@ -50,7 +52,7 @@ background-color: rgb(58, 58, 58);
 .Layout .logo {
   max-width: 120px;
 }
-@media (max-width: 550px) {
+@media (max-width: 750px) {
   .Layout header > .Nav {
     display: none;
   } 
