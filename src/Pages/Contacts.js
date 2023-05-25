@@ -6,12 +6,11 @@ export default function Contacts() {
       <div className="container">
         {" "}
         <h1>Contact US</h1>
-        <div className="contacts-item">
-          <img
+        <img
             src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iaUCpD..oJzA/v1/1200x-1.jpg"
             alt="DJI company"
           />
-        </div>
+        <div className="contacts-item">
         <div className="contacts-text">
           <h2>Headquarters</h2>
           <ul>
@@ -23,7 +22,7 @@ export default function Contacts() {
             <li>Strategic Alliances and Investments:</li>
             <li>Investor Relations:</li>
             <li>Enterprise Solutions:</li>
-            <li>Address:</li>
+            <li>Address:</li><br/>
             <li>Tel:</li>
           </ul>
         </div>
@@ -59,7 +58,10 @@ export default function Contacts() {
           </dd>
           <dd>+86 (0)755 26656677</dd>
         </div>
-        <div className="contacts-text2">
+        </div>
+      
+      <div className="contacts-item">
+          <div className="contacts-text2">
           <h2>DJI Studio</h2>
           <ul>
             <li>Office Hours:</li>
@@ -69,7 +71,7 @@ export default function Contacts() {
           </ul>
         </div>
         <div className="contacts-a2">
-          <dd>Monday to Friday, 09:30-18:30 ( Beijing Time)</dd>
+          <dd>Monday to Friday, 09:30-18:30</dd>
           <dd>
             <a href="https://www.dji.com/support">click here</a>
           </dd>
@@ -81,6 +83,8 @@ export default function Contacts() {
           </dd>
         </div>
       </div>
+      </div>
+     
     </div>
   );
 }

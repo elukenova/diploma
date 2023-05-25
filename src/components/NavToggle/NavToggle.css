@@ -17,6 +17,7 @@
 @media (max-width: 750px) {
   .NavToggle {
     display: inline-block;
+    margin-left: 55px;
   }
 
 }

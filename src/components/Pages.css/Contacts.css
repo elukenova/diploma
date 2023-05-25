@@ -10,7 +10,12 @@
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  width: 95%;
+}
+.contacts-item{
+  display: grid;
+  grid-template-areas:".contacts-item .contacts-a";
+  padding-bottom: 30px;
 }
 .Contacts .container {
   margin: 0 auto;
@@ -21,21 +26,29 @@
   text-align: center;
 }
 .contacts-a {
-  padding-top: 70px;
+  padding-top: 15%;
+
+}
+.contacts-a2{
+  width: 100%;
 }
 .contacts-a a {
   color: grey;
 }
 .contacts-a a:hover {
-  color: blue;
+  color: rgb(214, 214, 214);
   transition: 0.3s;
 }
 .contacts-a2 a {
   color: grey;
+  margin-left: 25%;
 }
 .contacts-a2 a:hover {
-  color: blue;
+  color: rgb(218, 214, 214);
   transition: 0.3s;
+}
+.contacts-a2 dd{
+  margin-left: 25%;
 }
 .Contacts h2 {
   padding-left: 25px;
