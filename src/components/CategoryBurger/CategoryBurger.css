@@ -1,0 +1,73 @@
+.CategoryBurger .content {
+  padding: 1rem 0;
+  background-color: #0a0a0afa;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+  width: 260px;
+  overflow: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 100;
+
+  transform: translateX(-300px);
+  transition: transform .3s;
+}
+.CategoryBurger .backdrop {
+  background-color: rgba(0, 0, 0, .3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 90;
+  display: none;
+}
+
+.open .backdrop {
+  display: block;
+}
+.open .content {
+  transform: translateX(0);
+}
+
+
+.CategoryBurger .CategoryList{
+  display: flex;
+  display: block;
+  flex-wrap: wrap;
+  margin-left: 16px;
+  margin-top: 60px;
+  font-size: 18px;
+  color: black;
+}
+.CategoryBurger .CategoryList ul{
+  text-decoration: none;
+  list-style-type: none;
+  color: rgb(248, 243, 243);
+}
+.CategoryBurger .CategoryList ul li {
+  text-align: start;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  color: #fbfbfb;
+
+
+}
+.CategoryBurger .CategoryList a{
+  color: #f4f0f0;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.CategoryBurger .CategoryList h1 {
+  color: rgba(254, 254, 254, 0.734);
+  background-color: rgba(48, 48, 49, 0.508);
+  padding: 15px 0;
+  border-radius: 10px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
+  max-width: 150px;
+}
