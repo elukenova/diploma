@@ -1,4 +1,4 @@
-import Logo from "../Logo/Logo"
+import Logo from "../Logo/Logo";
 import React, { useState } from "react";
 import Nav from "../Nav/Nav";
 import "./Layout.css";
@@ -8,13 +8,20 @@ import Auth from "../Auth/Auth";
 import Footer from "../Footer/Footer";
 import NavToggle from "../NavToggle/NavToggle";
 import Drawer from "../Drawer/Drawer";
+import CategoryBurger from "../CategoryBurger/CategoryBurger";
+import CategoryToggle from "../CategoryToggle/CategoryToggle";
 
 export default function Layout(props) {
   const [drawerOpen, setDrawerOpen] = useState(false);
-  
-    function toggleDrawer() {
-      setDrawerOpen(!drawerOpen);
-    }
+
+  function toggleDrawer() {
+    setDrawerOpen(!drawerOpen);
+  }
+  const [burgerOpen, setBurgerOpen] = useState(false);
+
+  function toggleBurger() {
+    setBurgerOpen(!burgerOpen);
+  }
   return (
     <div className="Layout">
       <header>
@@ -28,6 +35,8 @@ export default function Layout(props) {
 
       <aside>
         <CategoryList />
+        <CategoryBurger open={burgerOpen} toggle={toggleBurger} />
+        <CategoryToggle callback={toggleBurger} />
       </aside>
 
       <main>{props.children}</main>
