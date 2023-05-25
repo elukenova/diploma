@@ -45,10 +45,10 @@
 
 .header-text {
   position: absolute;
-  top: 9%;
+  top: 10%;
   left: 57%;
-  margin-left: 68px;
-  width: 66.5%;
+  margin-left: 5.6%;
+  width: 62.5%;
   transform: translate(-50%, -50%);
   color: rgb(0, 0, 0);
   background-color: rgba(255, 255, 255, 0.305);
@@ -74,7 +74,7 @@
   margin-bottom: 0.5rem;
 }
 .drone-video {
-  margin-top: 20%;
+  margin-top: 8%;
 }
 @media (max-width: 1200px) {
   .header-text{
@@ -124,5 +124,5 @@
     flex-direction: column;
     flex-wrap: wrap;
   }
-  
+
 }
