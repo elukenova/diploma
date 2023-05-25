@@ -1,0 +1,42 @@
+.CategoryToggle {
+  display: none;
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  transition: 0.3ms;
+  width: 100%;
+}
+
+.CategoryToggle .category-button {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  background-color: rgba(181, 175, 175, 0.553);
+}
+.CategoryToggle .category-button h2:hover{
+  color: black;
+}
+
+.CategoryToggle img {
+  display: block;
+  width: 30px;
+  margin: 0px 5px 0px auto;
+  transition: 0.2s;
+}
+
+.CategoryToggle .category-button h2 {
+  color: rgb(255, 253, 253);
+  margin: 5px auto 0px 5px;
+  text-align: center;
+  transition: 0.3ms;
+}
+
+@media (max-width:550px){
+  .CategoryToggle{
+    display: inline-block;
+  }
+}
