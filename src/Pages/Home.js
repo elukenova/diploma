@@ -71,21 +71,6 @@ export default function Home() {
                 Performance: It offers a maximum flight time of up to 46
                 minutes, a top speed of 68.4 km/h (42.5 mph), and a maximum
                 transmission range of up to 15 km (9.3 miles). Obstacle
-                Avoidance: The drone is equipped with an advanced obstacle
-                sensing system that uses sensors and cameras to detect and avoid
-                obstacles in its path, enhancing flight safety. Intelligent
-                Flight Modes: It includes various intelligent flight modes such
-                as ActiveTrack, Waypoints, Point of Interest (POI), and more,
-                allowing for creative and automated flight maneuvers. Foldable
-                Design: The Mavic 3 Pro features a compact and foldable design,
-                making it highly portable and easy to transport. Remote
-                Controller: The drone comes with a dedicated remote controller
-                that provides a reliable and intuitive control interface, with
-                integrated displays for real-time flight data. Please note that
-                the information provided is based on the knowledge available up
-                until my last update in September 2021. For the most accurate
-                and up-to-date information, I recommend referring to the
-                official DJI website or contacting DJI directly
               </p>
             </div>
             <div className="video">
@@ -122,18 +107,6 @@ export default function Home() {
                 such as ActiveTrack 4.0, Spotlight 2.0, Hyperlapse, and
                 QuickShots, providing automated flight maneuvers and creative
                 shooting options. AirSense: The Air 2S is equipped with AirSense
-                technology, which uses an ADS-B receiver to detect nearby manned
-                aircraft, providing enhanced safety and awareness during flight.
-                Remote Controller: The drone comes with a dedicated remote
-                controller that provides a reliable and responsive control
-                interface, with a built-in screen for real-time flight data and
-                live video feed. Compact Design: The Air 2S features a foldable
-                and compact design, making it highly portable and easy to carry
-                on adventures. It's important to note that specifications and
-                features may vary based on the specific model and region. For
-                the most accurate and up-to-date information, I recommend
-                referring to the official DJI website or contacting DJI
-                directly.
               </p>
             </div>
           </div>
