@@ -45,15 +45,15 @@ function App() {
   }, [cart]);
 
   useEffect(() => {
-  onCategoriesLoad(setCategories);
-  onProductsLoad(setProducts);
-  onOrdersLoad(setOrders);
+    onCategoriesLoad(setCategories);
+    onProductsLoad(setProducts);
+    onOrdersLoad(setOrders);
 
     onAuthChange((user) => {
       if (user) {
         user.isAdmin = user.email === "ajowka05@gmail.com";
       }
-      
+
       setUser(user);
     });
   }, []);

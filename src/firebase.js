@@ -1,7 +1,13 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection,onSnapshot } from 'firebase/firestore';
-import {GoogleAuthProvider, getAuth, onAuthStateChanged, signInWithPopup, signOut, } from 'firebase/auth';
+import { getFirestore, collection, onSnapshot } from "firebase/firestore";
+import {
+  GoogleAuthProvider,
+  getAuth,
+  onAuthStateChanged,
+  signInWithPopup,
+  signOut,
+} from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -13,7 +19,7 @@ const firebaseConfig = {
   projectId: "diplom-c8584",
   storageBucket: "diplom-c8584.appspot.com",
   messagingSenderId: "31800937564",
-  appId: "1:31800937564:web:96e56f1a3f5df0b611ea99"
+  appId: "1:31800937564:web:96e56f1a3f5df0b611ea99",
 };
 
 // Initialize Firebase
@@ -28,11 +34,11 @@ export const categoryCollection = collection(db, "categories");
 export const productsCollection = collection(db, "products");
 export const ordersCollection = collection(db, "orders");
 
-const provider = new GoogleAuthProvider ();
+const provider = new GoogleAuthProvider();
 export const logIn = () => signInWithPopup(auth, provider);
 export const logOut = () => signOut(auth);
 
-export const onAuthChange =(callback) => onAuthStateChanged(auth, callback);
+export const onAuthChange = (callback) => onAuthStateChanged(auth, callback);
 
 export const onCategoriesLoad = (callback) =>
   onSnapshot(categoryCollection, (snapshot) =>
@@ -52,7 +58,7 @@ export const onProductsLoad = (callback) =>
       }))
     )
   );
-  export const onOrdersLoad = (callback) =>
+export const onOrdersLoad = (callback) =>
   onSnapshot(ordersCollection, (snapshot) =>
     callback(
       snapshot.docs.map((doc) => ({
@@ -62,7 +68,7 @@ export const onProductsLoad = (callback) =>
     )
   );
 
- // отправка фотографии и получение ее url
+// отправка фотографии и получение ее url
 export const uploadProductPhoto = (file) => {
   const storageRef = ref(storage, `products/${file.name}`);
   return uploadBytes(storageRef, file)
